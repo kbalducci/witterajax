@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+wits = Wit.create([message: 'I love Ruby'])
+wits = Wit.create([message: 'Sometimes it works'])
