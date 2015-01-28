@@ -70,6 +70,6 @@ class WitsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wit_params
-      params[:wit].permit(:message)
+      params[:wit].permit(:message, :created_at)
     end
 end

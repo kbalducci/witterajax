@@ -12,16 +12,10 @@
     <div id='wit-container'>
       <tr>
         <% @wits.each do |wit| %>
-          <p class="message"> <%= wit.message %> </p>
-          <p class="time"> <%= wit.created_at %></p>
-    <!--   </tr> -->
-      <!--<tr>-->
-        <!--<td><%= link_to 'Show', wit %></td>-->
-   <!--      <td><%= link_to 'Edit', edit_wit_path(wit) %></td> -->
-        <!--<td><%= link_to 'Destroy', wit, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-      <!--</tr>-->
-        <% end %>
+          <td><p class="message"> <%= wit.message %> </p></td>
+          <td><p class="time"> <%= wit.created_at %></p> <%= link_to 'Destroy', wit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+        <% end %>
     </div>
 </table>
 
@@ -31,19 +25,3 @@
     <%= f.submit %>
 <% end %>
 
-
-
-  <!--<tbody>-->
-    <!--<% @wits.each do |wit| %>-->
-      <!--<tr>-->
-        <!--<td><%= link_to 'Show', wit %></td>-->
-        <!--<td><%= link_to 'Edit', edit_wit_path(wit) %></td>-->
-        <!--<td><%= link_to 'Destroy', wit, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-      <!--</tr>-->
-    <!--<% end %>-->
-  <!--</tbody>-->
-<!--</table>-->
-
-<!--<br>-->
-
-<!--<%= link_to 'New Wit', new_wit_path %>-->
